@@ -6,11 +6,11 @@ public class Main {
         FileHandler fh = new FileHandler();
 
         //load tour winners
-        ArrayList<TourWinner> winners = fh.loadAllWinners();
+        ArrayList<Covid19Data> dataSet = fh.loadAllData();
 
         // display tour winners
-        for (TourWinner winner: winners) {
-            System.out.println(winner);
+        for (Covid19Data data: dataSet) {
+            System.out.println(data);
         }
     }
 }
